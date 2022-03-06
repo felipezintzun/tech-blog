@@ -1,28 +1,40 @@
 * {
     box-sizing: border-box;
   }
-  
+  html {
+    background-color: #141824;
+  }
+
   body, html {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: white;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #60cbff;
   }
-  
+
+  #techblog {
+    color: white;
+  }
+
+  #techblog:hover {
+    color: #141824;
+  }
+
+  /* Dashboard Button */
   button {
-    background-color: #225ca3;
+    background-color: #60cbff;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,7 +45,7 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #ffb600;
   }
   
   .post-list {
@@ -73,17 +85,18 @@
     display: flex;
     flex-direction: column;
   }
-  
+  /* Header Styles */
   header {
-    border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
+    padding: 0 2%;
+    background-color: #ffb600;
   }
   
   header h1 {
-    font-size: 1em;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
   }
   
   main {
@@ -97,7 +110,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: white;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -106,40 +119,32 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #141824;
   }
   
   .delete-post-btn {
-    background-color: #d41414;
+    background-color: #949494;
   }
   
   .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #545454;
   }
   
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    font-weight: 200;
   }
   
   .post .title span {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: #949494;
   }
   
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
@@ -149,10 +154,6 @@
   .comment {
     padding: 1%;
     margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: #fff5eb;
   }
   
   .comment .meta {
@@ -170,9 +171,11 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ffb600;
     display: flex;
-    justify-content: center;
-    padding: 1%;
+    justify-content: right;
+    padding: 6 4%;
     font-size: 110%;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffb600;
   }
